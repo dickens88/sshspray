@@ -178,7 +178,7 @@ def arg_parse():
     parser.add_argument("-p", "--password", help="Password to test against targets")
     parser.add_argument("-P", "--port", default=22, help="Port to connect on")
     parser.add_argument("-v", "--verbose", action='count', default=0, help="Show failures. Use '-vv-' to show reasons for failure")
-    parser.add_argument("-t", "--target-list", required=True, help="List of hosts to test(hostname, ip, and/or CIDR)")
+    parser.add_argument("-t", "--target-list", required=True, help="A file contains hosts to test(hostname, ip, and/or CIDR)")
     parser.add_argument("-w", "--wait", nargs='?', default=1, type=int, help="Timeout for each connection in seconds")
     return parser.parse_args()
 
